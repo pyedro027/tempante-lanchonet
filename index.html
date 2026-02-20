@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brasa Urbana Burgers | Gourmet Dark</title>
+    <meta
+      name="description"
+      content="Template premium para hamburgueria com cardápio online, carrinho e finalização no WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="topbar" id="top">
+      <div class="wrap nav-shell">
+        <a class="brand-link" href="index.html" aria-label="Página inicial">
+          <span class="brand-mark">
+            <img
+              src="images/logo.png"
+              alt="Logo da hamburgueria"
+              class="brand-image"
+              onerror="this.style.display='none';this.parentElement.classList.add('no-logo')"
+            />
+            <strong class="brand-fallback">BU</strong>
+          </span>
+          <span class="brand-copy" data-config="brandName">Brasa Urbana Burgers</span>
+        </a>
+
+        <button class="menu-btn" type="button" aria-expanded="false" aria-label="Abrir menu">☰</button>
+
+        <nav class="nav-menu" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="#location">Localização</a>
+          <button class="pill pill-accent" type="button" data-action="direct-whatsapp">WhatsApp</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-banner">
+        <div class="wrap hero-frame">
+          <div class="hero-copy">
+            <small class="kicker">GOURMET DARK EXPERIENCE</small>
+            <h1 data-config="brandName">Brasa Urbana Burgers</h1>
+            <p data-config="tagline">Artesanal. Suculento. Sem desculpas.</p>
+            <div class="cta-row">
+              <a class="pill pill-accent" href="cardapio.html">Ver Cardápio</a>
+              <button class="pill pill-outline" type="button" data-action="order-help">
+                Pedir no WhatsApp
+              </button>
+            </div>
+            <div class="accent-line" aria-hidden="true"></div>
+          </div>
+
+          <figure class="hero-media" aria-label="Imagem principal">
+            <img
+              src="images/hero.jpg"
+              alt="Hambúrguer artesanal"
+              class="hero-photo"
+              onerror="this.style.display='none';this.parentElement.classList.add('hero-missing')"
+            />
+            <div class="hero-fx" aria-hidden="true">
+              <span>🍔</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="showcase">
+        <div class="wrap">
+          <div class="section-heading">
+            <h2>Carro-chefe da casa</h2>
+            <p>Toque para adicionar rápido ao carrinho.</p>
+          </div>
+          <div class="featured-wall" id="featured-wall">
+            <article class="feature-tile" data-featured-id="x-salada" tabindex="0">
+              <span class="badge">🔥 Mais pedido</span>
+              <h3>X-Salada</h3>
+              <p>Pão artesanal, carne, ovo, queijo, presunto e salada fresca.</p>
+              <div class="tile-foot">
+                <strong>R$ 22,00</strong>
+                <button type="button" class="pill mini" data-featured-id="x-salada">Adicionar ao carrinho</button>
+              </div>
+            </article>
+
+            <article class="feature-tile" data-featured-id="x-tudo" tabindex="0">
+              <span class="badge">⭐ Assinatura</span>
+              <h3>X-Tudo</h3>
+              <p>Bacon, ovo, queijo, presunto e molho da casa completo.</p>
+              <div class="tile-foot">
+                <strong>R$ 28,00</strong>
+                <button type="button" class="pill mini" data-featured-id="x-tudo">Adicionar ao carrinho</button>
+              </div>
+            </article>
+
+            <article class="feature-tile" data-featured-id="x-bacon" tabindex="0">
+              <span class="badge">🥓 Favorito</span>
+              <h3>X-Bacon</h3>
+              <p>Carne artesanal com bacon crocante e molho especial.</p>
+              <div class="tile-foot">
+                <strong>R$ 24,00</strong>
+                <button type="button" class="pill mini" data-featured-id="x-bacon">Adicionar ao carrinho</button>
+              </div>
+            </article>
+
+            <article class="feature-tile" data-featured-id="batata-bacon" tabindex="0">
+              <span class="badge">🍟 Crocante</span>
+              <h3>Batata Grande com Bacon</h3>
+              <p>Porção generosa para compartilhar sem arrependimento.</p>
+              <div class="tile-foot">
+                <strong>R$ 24,00</strong>
+                <button type="button" class="pill mini" data-featured-id="batata-bacon">Adicionar ao carrinho</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="pickup-strip">
+        <div class="wrap pickup-card">
+          <h2>Retirada no Local</h2>
+          <p data-config="deliveryText">Não fazemos entrega. Retirada no local.</p>
+        </div>
+      </section>
+
+      <section class="hours-and-location" id="location">
+        <div class="wrap split-grid">
+          <article class="info-panel">
+            <h2>Funcionamento</h2>
+            <ul id="hours-list" class="hours-list"></ul>
+          </article>
+
+          <article class="info-panel">
+            <h2>Localização e contato</h2>
+            <p data-config="addressText">Rua Montevideu 640, Araçás, Vila Velha – ES</p>
+            <div class="stack-actions">
+              <a class="pill pill-accent" data-config-link="mapsUrl" href="#" target="_blank" rel="noopener">
+                Abrir no Google Maps
+              </a>
+              <button class="pill pill-outline" type="button" data-action="direct-whatsapp">Falar no WhatsApp</button>
+            </div>
+            <p class="meta-social">
+              Instagram:
+              <a data-config-link="instagramUrl" data-config="instagramText" href="#" target="_blank" rel="noopener">@brasaurbana</a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-tail">
+      <div class="wrap tail-grid">
+        <div>
+          <h3 data-config="brandName">Brasa Urbana Burgers</h3>
+          <small>Template Gourmet Dark pronto para personalização.</small>
+        </div>
+        <div>
+          <a href="#top">Voltar ao topo</a>
+          <a href="cardapio.html">Abrir cardápio</a>
+        </div>
+        <div>
+          <button class="ghost-link" type="button" data-action="direct-whatsapp">WhatsApp</button>
+          <a data-config-link="mapsUrl" href="#" target="_blank" rel="noopener">Google Maps</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
