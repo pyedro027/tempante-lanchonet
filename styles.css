@@ -1128,4 +1128,12 @@ h1, h2 {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;       /* altura padrão */
+  object-fit: cover;   /* corta sem deformar */
+  border-radius: 12px; /* cantinho arredondado */
 }
