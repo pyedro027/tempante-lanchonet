@@ -190,7 +190,7 @@ function renderProducts(list) {
       <article class="product-box">
         <figure class="product-media">
           <img src="images/products/${product.id}.jpg" alt="${product.name}" onerror="this.style.display='none'" />
-          <span class="placeholder-icon">🍔</span>
+          <span class="placeholder-icon"></span>
         </figure>
         <h3>${product.name}</h3>
         <p>${product.description || ""}</p>
@@ -443,3 +443,4 @@ function init() {
 }
 
 init();
+
