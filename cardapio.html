@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio | Maria Bunita Lanches</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body data-page="menu">
+    <header class="topbar">
+      <div class="wrap nav-shell">
+        <a class="brand-link" href="index.html" aria-label="Página inicial">
+          <span class="brand-mark">
+            <img
+              src="images/logo.png"
+              alt="Logo da Maria Bunita Lanches"
+              class="brand-image"
+              onerror="this.style.display='none';this.parentElement.classList.add('no-logo')"
+            />
+            <strong class="brand-fallback">MB</strong>
+          </span>
+          <span class="brand-copy" data-config="brandName">Maria Bunita Lanches</span>
+        </a>
+
+        <button class="menu-btn" type="button" aria-expanded="false" aria-label="Abrir menu">☰</button>
+
+        <nav class="nav-menu" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a data-config-link="mapsUrl" href="#" target="_blank" rel="noopener">Localização</a>
+          <button class="pill pill-accent" type="button" data-action="direct-whatsapp">WhatsApp</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="menu-page wrap">
+      <section class="menu-lead">
+        <h1>Cardápio</h1>
+        <p>Adicione no carrinho e finalize no WhatsApp (retirada no local).</p>
+      </section>
+
+      <section class="menu-controls">
+        <label class="search-box" for="searchField">
+          <span>🔎</span>
+          <input id="searchField" type="search" placeholder="Buscar por nome" />
+        </label>
+        <div id="categoryChips" class="chip-lane"></div>
+      </section>
+
+      <section class="menu-content">
+        <div id="productGrid" class="products-view"></div>
+
+        <aside class="cart-side" id="cartAside" aria-label="Carrinho">
+          <header>
+            <h2>Seu carrinho</h2>
+            <span id="cartCountBadge">0 itens</span>
+          </header>
+
+          <div id="cartList" class="cart-list"></div>
+
+          <div class="cart-summary">
+            <p>Subtotal</p>
+            <strong id="cartTotal">R$ 0,00</strong>
+          </div>
+
+          <button class="pill pill-accent" type="button" id="finishOrderBtn">Finalizar no WhatsApp</button>
+
+          <div class="aux-links">
+            <button class="ghost-link" type="button" data-action="direct-whatsapp">Abrir WhatsApp</button>
+            <a data-config-link="mapsUrl" href="#" target="_blank" rel="noopener">Abrir no Maps</a>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="site-tail" style="margin-top: 28px">
+        <div class="wrap tail-grid">
+          <div>
+            <h3 data-config="brandName">Maria Bunita Lanches</h3>
+            <small>© 2026 Maria Bunita Lanches • Apenas retirada no local.</small>
+          </div>
+
+          <div>
+            <a href="index.html">Voltar para o início</a>
+          </div>
+
+          <div>
+            <button class="ghost-link" type="button" data-action="direct-whatsapp">WhatsApp</button>
+            <a data-config-link="mapsUrl" href="#" target="_blank" rel="noopener">Google Maps</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <button class="floating-cart" id="openCartMobile" type="button">Carrinho (0)</button>
+
+    <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+    <section class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <header>
+        <h2>Seu carrinho</h2>
+        <button class="ghost-link" type="button" id="closeDrawer">Fechar</button>
+      </header>
+
+      <div id="cartListMobile" class="cart-list"></div>
+
+      <div class="cart-summary">
+        <p>Total</p>
+        <strong id="cartTotalMobile">R$ 0,00</strong>
+      </div>
+
+      <button class="pill pill-accent" type="button" id="finishOrderBtnMobile">Finalizar no WhatsApp</button>
+    </section>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
