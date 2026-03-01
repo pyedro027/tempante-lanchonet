@@ -1503,3 +1503,37 @@ h1, h2 {
     bottom: 16px;
   }
 }
+
+/* ===========================
+   WHATSAPP FLOAT — FECHADO
+   =========================== */
+.whatsapp-float.wpp-closed {
+  background: #2a2a2a;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.40);
+  animation: none;
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.whatsapp-float.wpp-closed svg path:last-child {
+  fill: #888;
+}
+
+.whatsapp-float.wpp-closed span {
+  display: block !important;
+  color: #aaa;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 860px) {
+  .whatsapp-float.wpp-closed {
+    padding: 10px 14px !important;
+    border-radius: 999px;
+  }
+
+  .whatsapp-float.wpp-closed span {
+    display: block !important;
+    font-size: 0.72rem;
+  }
+}
